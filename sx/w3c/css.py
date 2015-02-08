@@ -28,8 +28,8 @@ Primary classes:
         CSSParser requests.
 
 Dependencies:
-    python 2.3 (or greater)
-    sets, cssParser, re (via cssParser)
+    python 2.4 (or greater)
+    set, cssParser, re (via cssParser)
 """
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -37,7 +37,7 @@ Dependencies:
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 import copy
-import sets
+import set
 import cssParser
 import cssSpecial
 
@@ -526,7 +526,7 @@ class CSSInlineRuleset(CSSRuleset, CSSDeclarations):
 class CSSBuilder(cssParser.CSSBuilderAbstract):
     RulesetFactory = CSSRuleset
     SelectorFactory = CSSMutableSelector
-    MediumSetFactory = sets.Set
+    MediumSetFactory = set
     DeclarationsFactory = CSSDeclarations
     TermFunctionFactory = CSSTerminalFunction
     TermOperatorFactory = CSSTerminalOperator
